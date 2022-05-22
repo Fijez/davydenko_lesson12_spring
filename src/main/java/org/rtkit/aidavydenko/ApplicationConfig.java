@@ -1,11 +1,14 @@
 package org.rtkit.aidavydenko;
 
+import org.rtkit.aidavydenko.components.GetResult;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.*;
 
 @Configuration
+@ComponentScan
 public class ApplicationConfig{
 
     @Bean

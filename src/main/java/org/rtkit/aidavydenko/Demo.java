@@ -12,11 +12,6 @@ public class Demo {
 
     public static void main(String[] args) {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(ApplicationConfig.class);
-//        List<StringModifier> stringModifierList = (List<StringModifier>) applicationContext.getBean("stringModifierList");
-//        for (StringModifier strmd :
-//                stringModifierList) {
-//            result = strmd.modify(result);
-//        }
         GetResult result = applicationContext.getBean(GetResult.class);
         System.out.println(result.modify(FOR_ENCODING));
     }
